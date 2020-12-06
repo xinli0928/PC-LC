@@ -1,0 +1,1 @@
+The PC loss is defined in "hard_margin_loss.py", while the Logit Constraints is defined in "margin_loss_soft_logit.py". The "vgg_training.py" shows how to use them to do the training and "adv_testing.py" shows how to do the adversarial testing. The "models" folder contains all model architectures used in the experiments.

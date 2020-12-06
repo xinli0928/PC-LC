@@ -1,0 +1,1 @@
+The models end with "_adv.npy" are used for testing while other are used for training.
