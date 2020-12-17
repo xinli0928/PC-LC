@@ -32,6 +32,14 @@ For a model trained with PC loss, due to the large margin between classes, the a
 Model Training and Evaluation
 ----
 
+PC Loss with Logit Constraints
+* The PC loss is defined in "hard_margin_loss.py", while the Logit Constraints is defined in "margin_loss_soft_logit.py". As shown in the "vgg_training.py" file, by simply importing these two components and using them as a drop-in replacement of the CE loss, they can directly improve model's adversarial robustness for free. 
+
+Other Files
+* The "vgg_training.py" shows how to use our method to do the training while "adv_testing.py" shows how to do the adversarial testing. The "models" folder contains all model architectures used in the experiments, which can be used to replace models in "vgg_training.py".
+
+Note that the model needs warm-up with CE Loss, and more training details can be found in our paper.
+
 
 Dependencies
 -----
